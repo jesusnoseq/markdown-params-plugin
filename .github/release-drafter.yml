@@ -1,2 +1,6 @@
 _extends: .github
-tag-template: MarkdownParams-$NEXT_MINOR_VERSION
+tag-template: markdown-params-$NEXT_MINOR_VERSION
+template: |
+  ## What’s Changed
+
+  $CHANGES
