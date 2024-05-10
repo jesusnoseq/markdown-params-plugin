@@ -31,9 +31,12 @@ public class Item {
     }
 
     public boolean isOrdered(){
-        return !"*".equals(bullet) && !"-".equals(bullet);
+        return !this.isUnordered();
     }
 
+    public boolean isUnordered(){
+        return "*".equals(bullet) || "-".equals(bullet) || "+".equals(bullet);
+    }
 
     public String getName() {
         return name;
