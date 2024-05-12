@@ -62,6 +62,21 @@ mvn hpi:run
 
 More details on Jenkins plugin development is available [here](https://wiki.jenkins-ci.org/display/JENKINS/Plugin+tutorial).
 
+## Other useful commands
+```shell
+mvn tidy:pom
+```
+
+
+```shell
+mvn clean install
+```
+
+
+```shell
+mvn verify
+```
+
 
 ## Contributing
 
