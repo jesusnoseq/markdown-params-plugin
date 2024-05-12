@@ -61,6 +61,7 @@ mvn hpi:run
 ```
 
 More details on Jenkins plugin development is available [here](https://wiki.jenkins-ci.org/display/JENKINS/Plugin+tutorial).
+Dependencies https://www.jenkins.io/doc/developer/plugin-development/dependency-management/
 
 ## Other useful commands
 ```shell
@@ -76,6 +77,13 @@ mvn clean install
 ```shell
 mvn verify
 ```
+
+
+```shell
+mvn versions:update-parent
+mvn clean verify
+```
+
 
 
 ## Contributing
