@@ -1,10 +1,9 @@
 package io.jenkins.plugins.markdownparams;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
 
 public class ParserTest {
 
@@ -53,7 +52,8 @@ public class ParserTest {
 
     @Test
     public void testMixOfItems() {
-        Parser parser = new Parser("# Title\n1. Ordered item\n* Unordered item\n- [ ] unchecked item\n* [x] checked item");
+        Parser parser =
+                new Parser("# Title\n1. Ordered item\n* Unordered item\n- [ ] unchecked item\n* [x] checked item");
         List<String> orderedItems = parser.getOrderedListItemsOf("Title");
         assertEquals(1, orderedItems.size());
         assertEquals("Ordered item", orderedItems.get(0));
@@ -61,7 +61,6 @@ public class ParserTest {
         List<String> listItems = parser.getUnorderedListItemsOf("Title");
         assertEquals(1, listItems.size());
         assertEquals("Unordered item", listItems.get(0));
-
 
         List<String> checkedItems = parser.getCheckedItemsOf("Title");
         assertEquals(1, checkedItems.size());
@@ -76,7 +75,6 @@ public class ParserTest {
         assertEquals("unchecked item", checkboxItems.get(0));
         assertEquals("checked item", checkboxItems.get(1));
     }
-
 
     @Test
     public void testUntitledItems() {

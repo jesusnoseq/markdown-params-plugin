@@ -1,7 +1,8 @@
 package io.jenkins.plugins.markdownparams;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 public class ItemTest {
 
@@ -49,7 +50,6 @@ public class ItemTest {
         Item item4 = new Item(1, "1.", "Ordered Item");
         assertFalse(item4.isUnordered());
     }
-
 
     @Test
     public void testIsChecked() {

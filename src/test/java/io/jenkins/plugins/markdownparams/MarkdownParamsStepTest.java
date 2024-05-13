@@ -19,12 +19,11 @@ public class MarkdownParamsStepTest {
         String agentLabel = "test-agent";
         DumbSlave node = jenkins.createOnlineSlave(Label.get(agentLabel));
         WorkflowJob job = jenkins.createProject(WorkflowJob.class, "test-job");
-        String pipelineScript = "def md = MarkdownParams('#### Header\\n- [x] Item1\\n')\n" +
-                "assert md instanceof io.jenkins.plugins.markdownparams.Parser";
+        String pipelineScript = "def md = MarkdownParams('#### Header\\n- [x] Item1\\n')\n"
+                + "assert md instanceof io.jenkins.plugins.markdownparams.Parser";
         job.setDefinition(new CpsFlowDefinition(pipelineScript, true));
         WorkflowRun run = jenkins.buildAndAssertSuccess(job);
         System.out.println(run.getLog());
         jenkins.assertLogContains("MarkdownParams", run);
     }
 }
-
