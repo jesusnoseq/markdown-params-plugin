@@ -6,6 +6,7 @@ work
 # IntelliJ IDEA project files
 .idea
 .idea/*
+/qodana.yaml
 
 # Eclipse project files
 .settings
