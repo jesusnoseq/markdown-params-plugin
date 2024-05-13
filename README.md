@@ -75,15 +75,17 @@ mvn clean install
 
 
 ```shell
-mvn verify
+mvn clean verify
 ```
 
 
 ```shell
 mvn versions:update-parent
-mvn clean verify
 ```
 
+```shell
+mvn spotless:apply
+```
 
 
 ## Contributing
