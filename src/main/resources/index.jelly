@@ -1,4 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?jelly escape-by-default='true'?>
 <div>
-    This plugins adds Jenkins pipeline steps to interact markdown checkboxes
+    This plugins adds Jenkins pipeline steps to interact markdown list and checkboxes
 </div>

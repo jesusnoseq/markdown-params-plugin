@@ -1,15 +1,14 @@
 package io.jenkins.plugins.markdownparams;
 
 import hudson.Extension;
+import java.util.Collections;
+import java.util.Set;
 import org.jenkinsci.Symbol;
 import org.jenkinsci.plugins.workflow.steps.Step;
 import org.jenkinsci.plugins.workflow.steps.StepContext;
 import org.jenkinsci.plugins.workflow.steps.StepDescriptor;
 import org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution;
 import org.kohsuke.stapler.DataBoundConstructor;
-
-import java.util.Collections;
-import java.util.Set;
 
 public class MarkdownParamsStep extends Step {
 
