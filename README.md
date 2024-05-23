@@ -7,6 +7,12 @@ In this way, for example, you could write in markdown a list of checkboxes and u
 
 You may want to use this plugin together with https://www.jenkins.io/doc/pipeline/steps/http_request/ or https://plugins.jenkins.io/generic-webhook-trigger/ to be able to access to the pull request body and extract params from there
 
+### Use case
+
+![use case diagram](doc/usecase.png)
+
+
+
 ## Getting started
 
 ### Example
