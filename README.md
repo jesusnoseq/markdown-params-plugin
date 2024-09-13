@@ -2,10 +2,11 @@
 
 ## Introduction
 
-It provides functions to parse markdown strings in order to search list of items, checkboxes included, preceded by headers.
-In this way, for example, you could write in markdown a list of checkboxes and use them in a pipeline
+Markdown Params plugin allows Jenkins pipelines to parse Markdown files, extract lists (including checkboxes), and retrieve parameters from them, such as checked or unchecked items. 
 
-You may want to use this plugin together with https://www.jenkins.io/doc/pipeline/steps/http_request/ or https://plugins.jenkins.io/generic-webhook-trigger/ to be able to access to the pull request body and extract params from there
+This is useful in continuous integration (CI) processes, where Markdown can serve as a task list or selection tool. 
+
+Combined with Jenkins plugins like http_request or generic-webhook-trigger, this enables dynamic control over pipelines based on user-defined inputs, such as deploying microservices marked in pull requests.
 
 ### Use case
 
